@@ -5,8 +5,8 @@ from flask import Flask, redirect, render_template, request, url_for
 
 app = Flask(__name__)
 openai.api_key = os.getenv("OPENAI_API_KEY")
-os.environ["http_proxy"] = "127.0.0.1:7890"
-os.environ["https_proxy"] = "127.0.0.1:7890"
+# os.environ["http_proxy"] = "127.0.0.1:7890"
+# os.environ["https_proxy"] = "127.0.0.1:7890"
 
 
 @app.route("/", methods=("GET", "POST"))
